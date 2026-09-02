@@ -1,0 +1,15 @@
+{
+  "name": "backend_application",
+  "version": "1.0.0",
+  "description": "backend application project with js",
+  "license": "ISC",
+  "author": "Rahul Suthar",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
