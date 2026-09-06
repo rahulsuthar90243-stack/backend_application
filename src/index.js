@@ -1,8 +1,13 @@
+import "dotenv/config";
+
+import dotenv from "dotenv";
+
 import mongoose from "mongoose";
-import {DB_Name} from "./constants";
+import DB_Name from "./constants.js";
+import connectDB from "./DB/index.js";
 
 
-
+connectDB();
 
 /*
 // First Approach
