@@ -5,9 +5,23 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import DB_Name from "./constants.js";
 import connectDB from "./DB/index.js";
+import { app } from "./app.js";
 
 
-connectDB();
+connectDB()
+.then(() => {
+    app.listen(process.env.PORT || 7000, () =>{
+        console.log(`app on listening in port ${process.env.PORT}`);
+    })
+     app.on("error", (error)=>{
+         console.error("ERROR", error);
+         throw error
+       })
+})
+.catch((error) => {
+    console.log("MONGO DB connection failed: ", error);
+
+})
 
 /*
 // First Approach
