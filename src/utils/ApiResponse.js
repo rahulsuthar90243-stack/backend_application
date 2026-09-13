@@ -10,3 +10,5 @@ class apiResponse{         //Create a custom response class for handling API res
         this.success = statusCode < 400
     }
 }
+
+export {apiResponse}

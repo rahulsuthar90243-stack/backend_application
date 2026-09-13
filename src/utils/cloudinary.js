@@ -9,7 +9,7 @@ cloudinary.config({
 });
 
 
-const uplodeCloudinary = async(localFilePath) => {    // uplode file to cloudinary and return the url of the file
+const UplodeCloudinary = async(localFilePath) => {    // uplode file to cloudinary and return the url of the file
     try {
         if(!localFilePath) return null
         // Update the file on cloudinary
@@ -26,3 +26,5 @@ const uplodeCloudinary = async(localFilePath) => {    // uplode file to cloudina
         return null;
     }
 }
+
+export {UplodeCloudinary};

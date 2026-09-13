@@ -14,3 +14,5 @@ class ApiError extends Error{      //Create a custom error class for handling AP
 
     }
 }
+
+export {ApiError}
